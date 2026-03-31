@@ -45,11 +45,24 @@ Uygulamanın arayüzünden çeşitli kesitler:
 
 ---
 
+## 🗄️ Veritabanı ve Veri Yönetimi
+
+Uygulama, harici bir sunucuya (API, Firebase, SQL Server vb.) ihtiyaç duymadan **tamamen çevrimdışı (offline)** çalışacak şekilde tasarlanmıştır.
+
+* **Yerel Veritabanı:** Projede veritabanı olarak telefonun kendi dahili hafızasında barındırılan **SQLite** kullanılmıştır. Bölümler, kişiler ve nöbet bilgileri `hospital_directory.db` adlı yerel dosyada tutulur.
+* **Örnek Veri Aktarımı (Seeding):** Uygulama cihaza ilk kez kurulup çalıştırıldığında, içi boş kalmaması adına kod içerisinde bulunan `mock_data.dart` dosyasındaki örnek hastane verileri (personeller, acil durum numaraları, haftalık nöbet listeleri) otomatik olarak SQLite veritabanına aktarılır.
+* **Kalıcı Değişiklikler:** Admin paneli üzerinden gerçekleştirilen her türlü ekleme, silme ve düzenleme işlemi bu yerel SQLite veritabanına anında ve kalıcı olarak kaydedilir.
+
+---
+
 ## 🛠️ Kullanılan Teknolojiler
 
 * **Framework:** [Flutter](https://flutter.dev/)
 * **Dil:** Dart
-* **Mimari:** Provider State Management (veya projende kullandığın yapıyı buraya yazabilirsin)
+* **Veritabanı:** SQLite (`sqflite` paketi)
+* **Mimari / State Management:** Provider
+
+---
 
 ## 🚀 Kurulum ve Çalıştırma
 
