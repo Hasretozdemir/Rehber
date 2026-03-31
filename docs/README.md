@@ -1,92 +1,60 @@
-# Proje Adı: Flutter Uygulaması
+# 🏥 Hastane Rehber ve Nöbet Takip Uygulaması
 
-## Genel Bakış
-Bu proje, Flutter ile geliştirilmiş çok sayfalı bir mobil uygulamadır. Uygulama, kullanıcıların çeşitli işlemleri gerçekleştirebileceği farklı ekranlar (sayfalar) içerir. Her ekranın işlevi ve amacı aşağıda detaylı olarak açıklanmıştır.
+Bu proje, hastane personelinin iletişim bilgilerine hızlıca ulaşılmasını, haftalık nöbet listelerinin takip edilmesini ve acil durum numaralarının yönetilmesini sağlayan kapsamlı bir **Flutter** mobil uygulamasıdır. 
 
-## Ekranlar ve Açıklamaları
+Uygulama, hem son kullanıcıların (doktorlar, hemşireler, personeller) rehber ve nöbet bilgilerini kolayca görüntüleyebileceği bir arayüze, hem de yöneticilerin bu bilgileri güncelleyebileceği bir **Admin Paneline** sahiptir.
 
-### 1. acil.png
-**Acil Durum Ekranı**
-- Acil durumlarda hızlı erişim için tasarlanmıştır.
-- Kullanıcılar acil numaralara veya bilgilere buradan ulaşabilir.
+## ✨ Özellikler
 
-### 2. admin.png
-**Yönetici Ana Ekranı**
-- Yöneticiler için özel işlemlerin bulunduğu ana paneldir.
-- Kullanıcı ve sistem yönetimi işlemleri yapılabilir.
-
-### 3. adminnbolum.png
-**Yönetici Bölüm Yönetimi**
-- Yöneticiler bölümleri ekleyip düzenleyebilir.
-- Bölüm bazlı yetkilendirme ve düzenleme işlemleri yapılır.
-
-### 4. adminnöbet.png
-**Yönetici Nöbet Yönetimi**
-- Nöbet listelerini oluşturma ve düzenleme ekranıdır.
-- Yöneticiler nöbetleri atayabilir ve güncelleyebilir.
-
-### 5. ayarlar.png
-**Ayarlar Ekranı**
-- Uygulama ayarlarının yapıldığı ekrandır.
-- Tema, bildirim ve hesap ayarları gibi seçenekler bulunur.
-
-### 6. bolumdüzenle.png
-**Bölüm Düzenleme Ekranı**
-- Mevcut bölümlerin düzenlenebildiği ekrandır.
-- Bölüm adı, açıklaması gibi bilgiler güncellenebilir.
-
-### 7. haftalıknöbet.png
-**Haftalık Nöbet Ekranı**
-- Haftalık nöbet çizelgesinin görüntülendiği ekrandır.
-- Kullanıcılar kendi nöbetlerini burada görebilir.
-
-### 8. karanlıktema.png
-**Karanlık Tema Ekranı**
-- Uygulamanın karanlık tema görünümünü gösterir.
-- Kullanıcılar tema tercihini buradan değiştirebilir.
-
-### 9. kisidüzenle.png
-**Kişi Düzenleme Ekranı**
-- Kullanıcılar kendi veya başkalarının bilgilerini düzenleyebilir.
-- İsim, iletişim bilgileri gibi alanlar güncellenebilir.
-
-### 10. login.png
-**Giriş Ekranı**
-- Kullanıcıların uygulamaya giriş yaptığı ekrandır.
-- Kimlik doğrulama işlemleri burada yapılır.
-
-### 11. nöbet.png
-**Nöbet Ekranı**
-- Genel nöbet listesinin görüntülendiği ekrandır.
-- Tüm kullanıcıların nöbetleri burada listelenir.
-
-### 12. nöbetekle.png
-**Nöbet Ekleme Ekranı**
-- Yeni nöbetlerin eklendiği ekrandır.
-- Kullanıcılar veya yöneticiler yeni nöbet atayabilir.
-
-### 13. rehber.png
-**Rehber Ekranı**
-- Kullanıcı rehberinin bulunduğu ekrandır.
-- Tüm kullanıcıların iletişim bilgileri burada listelenir.
+* **Kullanıcı Girişi (Login):** Güvenli kullanıcı doğrulaması.
+* **Kapsamlı Rehber:** Hastane personeline ait iletişim bilgilerinin listelenmesi ve aranması.
+* **Nöbet Takibi:** Günlük ve haftalık nöbetçi personel listelerinin görüntülenmesi.
+* **Acil Durum İletişimi:** Acil durumlarda hızlıca ulaşılabilecek önemli numaralar ve kişiler.
+* **Admin Paneli:** Yöneticiler için kişi, bölüm ve nöbet ekleme/düzenleme/silme yetkileri.
+* **Karanlık Tema (Dark Mode) Desteği:** Kullanıcı tercihine göre aydınlık ve karanlık tema seçenekleri.
 
 ---
 
-## Kullanım
-1. Projeyi klonlayın veya indirin.
-2. Gerekli Flutter bağımlılıklarını yükleyin:
-   ```
-   flutter pub get
-   ```
-3. Uygulamayı başlatın:
-   ```
-   flutter run
-   ```
+## 📸 Ekran Görüntüleri
 
-## Ek Bilgiler
-- Görseller ve ekranlar `assets/images/` veya ilgili klasörlerde bulunabilir.
-- Her ekranın detaylı işlevi için ilgili `.dart` dosyalarını inceleyebilirsiniz.
+Uygulamanın arayüzünden çeşitli kesitler:
+
+### 🔐 Giriş ve Genel Kullanım
+| Giriş Ekranı | Rehber Ana Ekranı |
+| :---: | :---: |
+| <img src="docs/screenshots/login.png" width="250"> | <img src="docs/screenshots/rehber.png" width="250"> |
+
+### 📅 Nöbet Takibi ve Acil Durum
+| Nöbet Ekranı | Haftalık Nöbet | Acil Durum |
+| :---: | :---: | :---: |
+| <img src="docs/screenshots/nöbet.png" width="250"> | <img src="docs/screenshots/haftalıknöbet.png" width="250"> | <img src="docs/screenshots/acil.png" width="250"> |
+
+### ⚙️ Admin Paneli ve Yönetim
+| Admin Paneli | Admin Bölüm Yönetimi | Admin Nöbet Yönetimi |
+| :---: | :---: | :---: |
+| <img src="docs/screenshots/admin.png" width="250"> | <img src="docs/screenshots/adminbolum.png" width="250"> | <img src="docs/screenshots/adminnöbet.png" width="250"> |
+
+| Kişi Düzenle | Bölüm Düzenle | Nöbet Ekle |
+| :---: | :---: | :---: |
+| <img src="docs/screenshots/kisidüzenle.png" width="250"> | <img src="docs/screenshots/bolumdüzenle.png" width="250"> | <img src="docs/screenshots/nöbetekle.png" width="250"> |
+
+### 🌙 Ayarlar ve Temalar
+| Ayarlar | Karanlık Tema |
+| :---: | :---: |
+| <img src="docs/screenshots/ayarlar.png" width="250"> | <img src="docs/screenshots/karanlıktema.png" width="250"> |
 
 ---
 
-Bu dokümantasyon, uygulamanın ekranlarını ve temel işlevlerini özetlemektedir. Daha fazla bilgi için proje dosyalarını inceleyebilirsiniz.
+## 🛠️ Kullanılan Teknolojiler
+
+* **Framework:** [Flutter](https://flutter.dev/)
+* **Dil:** Dart
+* **Mimari:** Provider State Management (veya projende kullandığın yapıyı buraya yazabilirsin)
+
+## 🚀 Kurulum ve Çalıştırma
+
+Projeyi yerel bilgisayarınızda çalıştırmak için aşağıdaki adımları izleyebilirsiniz:
+
+1. Depoyu bilgisayarınıza klonlayın:
+   ```bash
+   git clone [https://github.com/kullanici-adiniz/rehber.git](https://github.com/kullanici-adiniz/rehber.git)
